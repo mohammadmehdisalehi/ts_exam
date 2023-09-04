@@ -12,7 +12,7 @@ This repository contains a TypeScript-based web application that allows users to
 - [Project Structure](#project-structure)
 - [Usage](#usage)
 ## Demo
-![Image Link](./IMG/js08.png)
+![Image Link](./IMG/jstest.png)
 
 ## Getting Started
 
