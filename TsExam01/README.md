@@ -1,67 +1,75 @@
 
 ```markdown
-# Contact List Web Application
+# TypeScript Web Application
+This repository contains a TypeScript-based web application that allows users to generate random numbers, calculate prime numbers, and more. The application is designed to be modular and maintainable, with code organized into separate files for clarity.
 
-This is a simple web application for managing a contact list. Users can add new contacts, view existing contacts, and toggle between SIM and Device storage options.
+## Table of Contents
 
-## Features
-
-- Add new contacts with a name and phone number.
-- Choose to store contacts in either SIM or Device storage.
-- View the list of added contacts.
-- Toggle the contact list drawer for easy access.
+- [Demo](#demo)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Project Structure](#project-structure)
+- [Usage](#usage)
+## Demo
+![Image Link](./IMG/js08.png)
 
 ## Getting Started
 
-To get started with this project, follow these steps:
+Follow these instructions to get a copy of the project up and running on your local machine.
 
-1. Clone this repository to your local machine:
+### Prerequisites
+
+Ensure that you have the following software installed:
+
+- [Node.js](https://nodejs.org/) (version X.X.X)
+- [npm](https://www.npmjs.com/) (version X.X.X)
+
+### Installation
+
+1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/contact-list-app.git
+   git clone https://github.com/yourusername/your-repo.git
    ```
 
-2. Open the project directory:
+2. Navigate to the project directory:
 
    ```bash
-   cd contact-list-app
+   cd your-repo
    ```
 
-3. Install any necessary dependencies:
+3. Install dependencies:
 
    ```bash
-   # Assuming you have Node.js installed
    npm install
    ```
 
-4. Build the project:
+## Project Structure
 
-   ```bash
-   npm run build
-   ```
+The code is organized into the following files and directories:
 
-5. Open the `index.html` file in your web browser to run the application.
+- **main.ts:** Main TypeScript file that imports necessary elements from other files and sets up event listeners.
+
+- **events.ts:** Contains functions for generating random numbers, calculating prime numbers, and clearing input and presentation. Utilizes imported elements and maintains an array of calculated values.
+
+- **functions.ts:** Defines a reusable `Box` function for creating HTML elements with attributes and children.
+
+- **importer.ts:** Exports references to HTML elements, allowing easy access in other files.
+
+- **types.ts:** Contains type definitions used within the project.
 
 ## Usage
 
-- Click the "Show Contacts" button to open the contact list drawer.
-- Fill in the contact's name and phone number.
-- Choose whether to store the contact in SIM or Device storage.
-- Click the "Submit" button to add the contact to the list.
-- You can toggle the contact list drawer by clicking the close button.
+1. Open the HTML file in a web browser.
 
-## Project Structure
+2. Enter a 5-digit number in the input field.
 
-The project is structured as follows:
+3. Click the "Generate" button to generate a random number.
 
-- `src/` directory contains the TypeScript source files.
-  - `even.ts` - Main Events of projects.
-  - `functions.ts` - Utility functions.
-  - `importer.ts` - DOM element imports.
-  - `state.ts` - Repeated DOM element imports (Consider consolidating with importer.ts).
-  - `types.ts` - TypeScript type definitions.
-- `dist/` directory contains the compiled JavaScript files and tailwind output.css classes.
-- `index.ts` - Main application logic.
-- `index.html` - HTML template for the web application.
+4. Click the "Calculate" button to find prime numbers up to the entered value.
+
+5. Click the "Clear" button to clear the input field and presentation.
+
 ## Authors
 - [@MohammadMehdiSalehi](https://github.com/mohammadmehdisalehi)
