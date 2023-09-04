@@ -1,5 +1,5 @@
 
-```markdown
+
 # TypeScript Web Application
 This repository contains a TypeScript-based web application that allows users to generate random numbers, calculate prime numbers, and more. The application is designed to be modular and maintainable, with code organized into separate files for clarity.
 
